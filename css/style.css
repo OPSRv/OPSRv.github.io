@@ -1,0 +1,22 @@
+
+body{
+    height: 100vh;
+    background: url(../img/kleft.jpg) center center;
+    background-size: cover;
+    background-image:url(../img/kleft.jpg);
+}
+.main{
+    height: 50vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+}
+.menu__icons{
+    width: 3.5rem;
+    margin: 1rem;
+}
+.menu__icons:hover{
+    opacity: .7;
+}
