@@ -1,12 +1,10 @@
 let main = document.querySelector(".main");
-let menu__item = document.querySelector(".menu__item");
-let menu__item_two = document.querySelector(".menu__item_two");
-
-setTimeout(function () {
-  document.body.classList.add("body_visible");
-}, 200);
 
 window.onload = function () {
+  setTimeout(function () {
+    main.classList.add("main_visible");
+  }, 500);
+
   const youtubeIcon = new Vivus("youtube", {
     type: "delayed",
     duration: 200,

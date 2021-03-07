@@ -1,8 +1,8 @@
-.body_hide {
+.main_hide {
 	opacity: 0;
 	transition: .9s opacity ease-in-out;
 }
-.body_visible {
+.main_visible {
 	opacity: 1;
 }
 
