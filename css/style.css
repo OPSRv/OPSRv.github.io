@@ -8,8 +8,8 @@
 
 body{
     height: 100vh;
-    background: url(../img/kleft.jpg) center center;
-    background-size: cover;
+    /* background: url(../img/kleft.jpg) center center; */
+    /* background-size: cover; */
     overflow: hidden;
 }
 .main{
