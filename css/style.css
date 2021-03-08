@@ -105,3 +105,23 @@ transition: 2s;
         margin-top: 0.2em;
     }
 }
+@media (max-width: 568px) {
+    h1>span{
+        margin: 0 .04em 0 .04em;
+        font-size: .7em;
+    }
+    .menu__item_icons>svg{
+        width: 3.5em;
+        padding: .7rem;
+    }
+}
+@media (max-width: 320px) {
+    h1>span{
+        margin: 0 .04em 0 .04em;
+        font-size: .6em;
+    }
+    .menu__item_icons>svg{
+        width: 3em;
+        padding: .8rem;
+    }
+}
