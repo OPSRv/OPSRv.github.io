@@ -52,6 +52,7 @@ h1 {
     text-align: center;
     transition: 1s;
     display: flex;
+
     
   }  
   @keyframes glow {
@@ -68,4 +69,15 @@ h1>span:hover{
 scale: 1px;
 cursor: pointer;
 text-shadow: 0 0 30px #fcfcfc, 0 0 10px #0084c281;
+}
+
+
+@media (max-width: 1000px) {
+    h1{
+        font-size: 8em; 
+    } 
+    .menu__item_icons>svg{
+        width: 4em;
+        margin: .8em;
+    }
 }
