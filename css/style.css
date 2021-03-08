@@ -1,3 +1,8 @@
+body{
+    height: 100vh;
+    background: url(../img/kleft.jpg) center center;
+    background-size: cover;
+}
 .main_hide {
 	opacity: 0;
 	transition: .9s opacity ease-in-out;
@@ -5,19 +10,6 @@
 .main_visible {
 	opacity: 1;
 }
-body, html {
-    height: 100%;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-body{
-    height: 100vh;
-    background: url(../img/kleft.jpg) center center;
-    background-size: cover;
-}
-
 .main{
     display: flex;
     flex-flow: column nowrap;
@@ -50,18 +42,12 @@ body{
     opacity: .8;
     box-shadow: 0 0 10px #e9e9e954;
     border-radius: 50%;
-
-
 }
 .menu__item_icons>svg{
     width: 6em;
-
     border-radius: 10%;
     padding: 1rem;
 }
-
-
-
 
 h1 {
     color: rgba(240, 240, 240, 0.61);
