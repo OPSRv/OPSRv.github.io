@@ -1,5 +1,5 @@
 let main = document.querySelector(".main");
-
+let band_name = document.querySelector(".band-name");
 const animate = {
   duration: 200,
   type: "sync",
@@ -8,6 +8,7 @@ const animate = {
 
 setTimeout(function () {
   main.classList.add("main_visible");
+  band_name.classList.add("main_visible");
 }, 500);
 
 window.onload = function () {

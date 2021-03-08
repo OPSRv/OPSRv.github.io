@@ -10,22 +10,25 @@ body{
     height: 100vh;
     background: url(../img/kleft.jpg) center center;
     background-size: cover;
-    overflow: hidden;
+
+}
+h1{
+    margin: 0;
+    padding: .06rem;
+    font-size: 2em;
+    color: rgba(240, 240, 240, 0.61);
 }
 .main{
-    /* height: 50vh; */
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     align-items: center;
     align-self: center;
     justify-content: center;
-    border: 1px solid rgb(68, 0, 255);
 }
 
 .menu__item{
     display: flex;
     flex-flow: row nowrap;
-    border: 1px solid red;
 }
 .menu__item_icons{
     padding: 0;
