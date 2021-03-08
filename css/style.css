@@ -12,12 +12,7 @@ body{
     background-size: cover;
 
 }
-h1{
-    margin: 0;
-    padding: .06rem;
-    font-size: 2em;
-    color: rgba(240, 240, 240, 0.61);
-}
+
 .main{
     display: flex;
     flex-flow: column nowrap;
@@ -44,4 +39,33 @@ h1{
 .menu__item_icons>svg{
     width: 20px;
     margin: 3px;
+}
+
+
+
+h1 {
+    color: rgba(240, 240, 240, 0.61);
+    margin: 0;
+    font-size: 2em;
+    text-transform: uppercase;
+    animation: glow 2s ease-in-out infinite alternate;
+    text-align: center;
+    transition: 1s;
+    display: flex;
+    
+  }  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 20px #ffffff;
+    }
+    to {
+      text-shadow: 0 0 30px #91919148, 0 0 10px #7575755b;
+    }
+  }
+
+
+h1>span:hover{
+scale: 1px;
+cursor: pointer;
+text-shadow: 0 0 30px #fcfcfc, 0 0 10px #0084c281;
 }
