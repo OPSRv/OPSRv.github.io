@@ -59,7 +59,7 @@ h1 {
     transition: 1s;
     display: flex;
     cursor: pointer;
-    margin-top: 0.6em;
+    margin-top: 0.5em;
   }  
   @keyframes glow {
     from {
