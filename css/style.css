@@ -8,26 +8,26 @@
 
 body{
     height: 100vh;
-    /* background: url(../img/kleft.jpg) center center; */
-    /* background-size: cover; */
+    background: url(../img/kleft.jpg) center center;
+    background-size: cover;
     overflow: hidden;
 }
 .main{
-    height: 50vh;
+    /* height: 50vh; */
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
     align-items: center;
     align-self: center;
     justify-content: center;
+    border: 1px solid rgb(68, 0, 255);
 }
 
 .menu__item{
     display: flex;
     flex-flow: row nowrap;
+    border: 1px solid red;
 }
 .menu__item_icons{
-    width: 1rem;
-    margin: .2rem;
     padding: 0;
     transition: 1s;
     display: flex;
@@ -37,4 +37,8 @@ body{
 }
 .menu__item_icons:hover{
     opacity: .5;
+}
+.menu__item_icons>svg{
+    width: 20px;
+    margin: 3px;
 }

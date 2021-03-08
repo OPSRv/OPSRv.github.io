@@ -1,7 +1,7 @@
 let main = document.querySelector(".main");
 
 const animate = {
-  duration: 100,
+  duration: 200,
   type: "sync",
   animTimingFunction: Vivus.EASE_IN,
 };
