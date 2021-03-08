@@ -5,12 +5,17 @@
 .main_visible {
 	opacity: 1;
 }
-
+body, html {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
 body{
     height: 100vh;
     background: url(../img/kleft.jpg) center center;
     background-size: cover;
-
 }
 
 .main{
@@ -20,7 +25,14 @@ body{
     align-self: center;
     justify-content: center;
 }
-
+.menu{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    width: 95vw;
+}
 .menu__item{
     display: flex;
     flex-flow: row nowrap;
@@ -34,12 +46,20 @@ body{
     align-items: center;
 }
 .menu__item_icons:hover{
-    opacity: .5;
+    transform: scale(1.1);
+    opacity: .8;
+    box-shadow: 0 0 10px #e9e9e954;
+    border-radius: 50%;
+
+
 }
 .menu__item_icons>svg{
     width: 6em;
-    margin: 1em;
+
+    border-radius: 10%;
+    padding: 1rem;
 }
+
 
 
 
@@ -52,8 +72,8 @@ h1 {
     text-align: center;
     transition: 1s;
     display: flex;
-
-    
+    cursor: pointer;
+    margin-top: 0.6em;
   }  
   @keyframes glow {
     from {
@@ -63,21 +83,37 @@ h1 {
       text-shadow: 0 0 30px #91919148, 0 0 10px #7575755b;
     }
   }
-
+  h1>span{
+      margin: 0 .08em 0 .08em;
+      transition: .9s;
+  }
 
 h1>span:hover{
-scale: 1px;
-cursor: pointer;
-text-shadow: 0 0 30px #fcfcfc, 0 0 10px #0084c281;
+transition: 2s;
+transform: scale(1.06);
 }
 
+@media (min-width: 1600px) {
+    h1 {
+        font-size: 12em;
+      }  
+      
+}
 
 @media (max-width: 1000px) {
     h1{
         font-size: 8em; 
     } 
+    h1>span{
+        margin: 0 .1em 0 .1em;
+    }
+}
+@media (max-width: 768px) {
+    h1>span{
+        margin: 0 .04em 0 .04em;
+    }
     .menu__item_icons>svg{
-        width: 4em;
-        margin: .8em;
+        width: 6.5em;
+        padding: .8em;
     }
 }

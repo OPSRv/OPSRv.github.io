@@ -6,12 +6,12 @@ const animate = {
   animTimingFunction: Vivus.EASE_IN,
 };
 
-setTimeout(function () {
-  main.classList.add("main_visible");
-  band_name.classList.add("main_visible");
-}, 500);
-
 window.onload = function () {
+  setTimeout(function () {
+    main.classList.add("main_visible");
+    band_name.classList.add("main_visible");
+  }, 500);
+
   const youtubeIcon = new Vivus("youtube", {
     file: "./img/youtube.svg",
     ...animate,
