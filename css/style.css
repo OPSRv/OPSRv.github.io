@@ -59,7 +59,7 @@ h1 {
     transition: 1s;
     display: flex;
     cursor: pointer;
-    margin-top: 0.5em;
+    margin-top: 0.2em;
   }  
   @keyframes glow {
     from {
@@ -95,9 +95,6 @@ transition: 2s;
     } 
     h1>span{
         margin: 0 .1em 0 .1em;
-    }
-    .menu{
-        flex-flow: row nowrap;
     }
     .menu__item_icons>svg{
         width: 4em;
